@@ -8,7 +8,7 @@ if defined _OLD_CODEPAGE (
     "%SystemRoot%\System32\chcp.com" 65001 > nul
 )
 
-set VIRTUAL_ENV=D:\env\venv\bookmarks
+set VIRTUAL_ENV=D:\social-website-with-django\env\venv\bookmarks
 
 if not defined PROMPT set PROMPT=$P$G
 
