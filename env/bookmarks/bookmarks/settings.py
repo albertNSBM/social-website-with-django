@@ -41,7 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'social_django',
      'django_extensions',
-     
+     'easy_thumbnails',
 ]
 
 MIDDLEWARE = [
@@ -143,3 +143,7 @@ AUTHENTICATION_BACKENDS = [
 SOCIAL_AUTH_FACEBOOK_KEY = '3467794763495214' # Facebook App ID
 SOCIAL_AUTH_FACEBOOK_SECRET = '8d0ea7baddd0d961034cd5c12dbeeeaa' # Facebook App Secret
 SOCIAL_AUTH_FACEBOOK_SCOPE = ['email']
+if DEBUG:
+ import mimetypes
+ mimetypes.add_type('application/javascript', '.js', True)
+ mimetypes.add_type('text/css', '.css', True)
